@@ -1,0 +1,31 @@
+Start
+  |
+  |---> Generate Topology (G)
+  |---> Cluster Routers into Areas
+  |---> Identify Border Routers
+  |---> Start Mininet with Topology
+  |---> Init Router State
+  |
+  |---> For Each Area:
+  |       |---> Compute Hop/Latency/Bandwidth
+  |       |---> Compute Dynamic Metric
+  |       |---> Generate Routing Table
+  |       |---> Send UPDATE Messages
+  |       |---> Save Routing Table
+  |
+  |---> Assign Inter-Area Weights
+  |---> Generate & Send Summary Routes
+  |---> Store Summary in State
+  |---> Print State & Routing Info
+  |
+  |---> Run Security Tests:
+  |       |---> Loop Detection
+  |       |---> Route Hijack
+  |       |---> Spoofing
+  |
+  |---> Stop Mininet
+  |---> Visualize Network
+  |
+Return G, Clusters, Distance Matrix, State
+  |
+ End
